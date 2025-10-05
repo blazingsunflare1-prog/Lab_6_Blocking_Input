@@ -10,6 +10,7 @@ public class FuelCosts {
         double mpg = 0.0;
         double pricePerGallon = 0.0;
         boolean done = false;
+        String trash = "";
 
         // establish variables
         do {
@@ -19,6 +20,10 @@ public class FuelCosts {
                 in.nextLine();
                 done = true;
 
+            }
+            else {
+                trash = in.nextLine();
+                System.out.println("You must enter a valid input, not: " + trash);
             }
         }
 
@@ -32,6 +37,10 @@ public class FuelCosts {
                 done = true;
 
             }
+            else {
+                trash = in.nextLine();
+                System.out.println("You must enter a valid input, not: " + trash);
+            }
         }
 
         while (!done);
@@ -43,6 +52,10 @@ public class FuelCosts {
                 in.nextLine();
                 done = true;
 
+            }
+            else {
+                trash = in.nextLine();
+                System.out.println("You must enter a valid input, not: " + trash);
             }
         }
         while (!done);
